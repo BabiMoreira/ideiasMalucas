@@ -1,0 +1,21 @@
+{% extends 'shared/layout.html' %}
+
+{% block conteudo %}
+
+
+<h1> Listagem das Ideas </h1>
+
+
+<div id="box">
+        {% for ideia in ideias %}
+        <div class="boxes">
+                <p>{{ideia.pessoa.nome}}</p>
+                <p>{{ideia.titulo}}</p>
+                <p>{{ideia.categoria}}</p>
+                <p>{{ideia.descricao}}</p>
+        </div>
+        {% endfor %}
+       
+</div>
+
+{% endblock %}

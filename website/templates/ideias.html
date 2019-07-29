@@ -1,0 +1,48 @@
+{% extends 'shared/layout.html' %}
+
+{% block conteudo %}
+
+{% if pessoa is None %}
+
+<h1>Ops, você precisa se cadastrar</h1>
+
+<p>
+    <a href="/"> Clique aqui para se cadastrar</a>
+</p>
+
+{% else %}
+
+<form action="/ideias" method="post">
+
+    <fieldset id='ideias'>
+        {% csrf_token %}
+        
+        <h2> Cadastre a sua ideia {{pessoa.nome}}</h2>
+        <div class="campo">
+            <input type="hidden" name="email" value="{{pessoa.email}}">
+            <input type="text" name="titulo" placeholder="Nome da ideia">
+        </div>
+        <div class="campo">
+            <label for="descricao"> Descreva sua ideia </label>
+            <textarea name="descricao" cols="70" rows="10">
+            </textarea>
+        </div>
+
+        <div class="campo">
+            <select name="categorias">
+                <option value=""> Selecione </option>
+                <option value="TECNOLOGICAS"> Tecnológicas </option>
+                <option value="CIENTIFICA">Científica</option>
+                <option value="EDUCACAO">Educação</option>
+                <option value="PUBLICAS">Públicas</option>
+                <option value="OUTROS">Outros</option>
+            </select>
+        </div>
+        <input type="text" name="categoria_outros" placeholder="Caso outros, qual?">
+        <input  class='botao' type="submit" value="CADASTRAR IDEIA ">
+    </fieldset>
+
+</form>
+
+{% endif %}
+{% endblock %}

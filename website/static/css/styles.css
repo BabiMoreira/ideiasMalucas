@@ -1,0 +1,56 @@
+body{
+margin: 0; padding: 0;
+background-color: #F2F2F2;
+font-family: 'Archivo Narrow', sans-serif;}
+
+header, footer{
+    background-color: #2E3741;
+    height: 50px; width: auto;
+}
+
+#cadastro, #login, #ideias{
+  margin: 30px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(181,181,181,.7);
+  position:relative;
+  left:28%; top:29%;
+  width: 500px; height:70vh;
+  border: none;
+}
+
+
+.campo label{
+    margin-bottom: 0,2em;
+    display: block;
+}
+
+.nome, .sobrenome{
+    width: 180px
+}
+
+input{
+    width: 300px;
+    height: 20px;
+}
+
+.botao{
+    background-color:#2E9220;
+    height: 40px;
+    border: none;
+  
+}
+
+#login,{
+    display: flex;
+    width: 400px; height:70vh;
+    left: 31%;
+}
+
+.boxes{
+    margin: 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(181,181,181,.7);
+    position:relative;
+    /* width: 350px; height:35vh; */
+}
+

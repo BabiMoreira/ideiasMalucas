@@ -1,0 +1,48 @@
+{% extends 'shared/layout.html' %}
+{% block conteudo %}
+
+{{msg}}
+<form action="/" method="post">
+    {% csrf_token %}
+
+  <fieldset id="cadastro">
+        <h2> Crie sua Conta </h2>
+    <div class='formulario' >
+            <div class="campo1">
+                <label> Nome </label>
+                <input  class='nome' type="text" name="nome" required>
+
+                <label> Sobrenome </label>
+                <input class='sobrenome' type="text" name="sobrenome" required>
+            </div>
+
+        <div class="campo">
+            <label> E-mail </label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="campo">
+            <label for=""> Gênero </label>
+            <select name="genero" required>
+                <option value=""> Selecione </option>
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+                <option value="O">Outro</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for=""> Biografia </label>
+            <textarea name="biografia" cols="70" rows="10">
+        </textarea>
+        </div>
+
+        <div class="campo">
+            <input  class='botao'type="submit" value="CADASTRAR">
+        </div>
+    </div>
+</fieldset>
+
+</form>
+
+{% endblock %}
