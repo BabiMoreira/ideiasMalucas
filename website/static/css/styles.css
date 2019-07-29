@@ -40,11 +40,11 @@ input{
   
 }
 
-#login,{
+/* #login{
     display: flex;
     width: 400px; height:70vh;
     left: 31%;
-}
+} */
 
 .boxes{
     margin: 30px;
@@ -54,3 +54,9 @@ input{
     /* width: 350px; height:35vh; */
 }
 
+.campo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
