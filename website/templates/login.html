@@ -4,12 +4,10 @@
 <p>{{msg}}</p>
 
 <form action="/login" method="post">
-    <fieldset id="login">
         {% csrf_token %}
         <h1> Login </h1>
         <input type="email" name="email" placeholder="E-mail">
         <input class='botao'type="submit" value="Enviar">
-    </fieldset>
 </form>
 
 {% endblock %}

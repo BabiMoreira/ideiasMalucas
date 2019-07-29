@@ -8,18 +8,40 @@ header, footer{
     height: 50px; width: auto;
 }
 
-#cadastro, #login, #ideias{
-  margin: 30px;
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(181,181,181,.7);
-  position:relative;
-  left:28%; top:29%;
-  width: 500px; height:70vh;
-  border: none;
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(181,181,181,.7);
+    position:relative;
+    left:28%; top:29%;
+    width: 500px; height:70vh;
+    border: none;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.botao{
+    background-color:#2E9220;
+    height: 30px;
+    border: none;
 }
 
 
-.campo label{
+
+/* .campo label{
     margin-bottom: 0,2em;
     display: block;
 }
@@ -37,14 +59,7 @@ input{
     background-color:#2E9220;
     height: 40px;
     border: none;
-  
 }
-
-/* #login{
-    display: flex;
-    width: 400px; height:70vh;
-    left: 31%;
-} */
 
 .boxes{
     margin: 30px;
@@ -52,11 +67,4 @@ input{
     box-shadow: 0 2px 4px 0 rgba(181,181,181,.7);
     position:relative;
     /* width: 350px; height:35vh; */
-}
 
-.campo2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}

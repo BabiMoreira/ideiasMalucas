@@ -4,8 +4,6 @@
 {{msg}}
 <form action="/" method="post">
     {% csrf_token %}
-
-  <fieldset id="cadastro">
         <h2> Crie sua Conta </h2>
     <div class='formulario' >
             <div class="campo1">
@@ -31,18 +29,16 @@
             </select>
         </div>
 
-        <div class="campo">
+        <div class="box1">
             <label for=""> Biografia </label>
-            <textarea name="biografia" cols="70" rows="10">
+            <textarea name="biografia" cols="60" rows="10">
         </textarea>
         </div>
 
-        <div class="campo2">
+        <div class="box2">
             <input  class='botao' type="submit" value="CADASTRAR">
         </div>
     </div>
-</fieldset>
-
 </form>
 
 {% endblock %}
