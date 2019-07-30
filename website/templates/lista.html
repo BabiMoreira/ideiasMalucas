@@ -2,16 +2,17 @@
 
 {% block conteudo %}
 
-
 <h1> Listagem das Ideas </h1>
-        {% for ideia in ideias %}
-                <p>{{ideia.pessoa.nome}}</p>
-                <p>{{ideia.titulo}}</p>
-                <p>{{ideia.categoria}}</p>
-                <p>{{ideia.descricao}}</p>
-                <a href="/remover_ideia/{{ideia.id}}">
-                <input type="submit" value=" Excluir Ideia "></a>
-    
-        {% endfor %}
-       
+{% for ideia in ideias %}
+<div class="lista">
+        <p>{{ideia.pessoa.nome}}</p>
+        <p>{{ideia.titulo}}</p>
+        <p>{{ideia.categoria}}</p>
+        <p>{{ideia.descricao}}</p>
+        <hr>
+        <a href="/remover_ideia/{{ideia.id}}"><input type="submit" value=" EXCLUIR "></a>
+</div>
+
+{% endfor %}
+
 {% endblock %}
