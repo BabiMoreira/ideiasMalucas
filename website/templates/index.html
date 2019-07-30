@@ -4,15 +4,15 @@
 {{msg}}
 <form action="/" method="post">
     {% csrf_token %}
-        <h2> Crie sua Conta </h2>
-    <div class='formulario' >
-            <div class="campo1">
-                <label> Nome </label>
-                <input  class='nome' type="text" name="nome" required>
+    <h2> Crie sua Conta </h2>
+    <div >
+        <div class="campo">
+            <label> Nome </label>
+            <input class='nome' type="text" name="nome" required>
 
-                <label> Sobrenome </label>
-                <input class='sobrenome' type="text" name="sobrenome" required>
-            </div>
+            <label> Sobrenome </label>
+            <input class='sobrenome' type="text" name="sobrenome" required>
+        </div>
 
         <div class="campo">
             <label> E-mail </label>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="box2">
-            <input  class='botao' type="submit" value="CADASTRAR">
+            <input class='botao' type="submit" value="CADASTRAR">
         </div>
     </div>
 </form>

@@ -62,7 +62,6 @@ def cadastrar_ideia(request):
             ideia.categoria = request.POST.get('categoria')
             ideia.categoria_outros = request.POST.get('categoria_outros')
             ideia.save()
-            print('uhuuu')
             return redirect('/lista') 
 
     return render(request, 'ideias.html', {}) 
@@ -73,5 +72,6 @@ def remover_ideia (request, id):
         ideia.ativo = False
         ideia.save()
         return redirect('/lista') 
+        
     return render(request, 'lista.html')
 
